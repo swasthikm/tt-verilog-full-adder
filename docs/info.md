@@ -9,11 +9,25 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+This circuit implements a two-bit adder, where each input has one bit.
+
+`A + B + Cin = S with Cout`
 
 ## How to test
 
-Explain how to use your project
+Switching A, B, Cin result in following Sum and Cout value.
+
+
+| Cin     | A       | B      | S      | Cout   |
+|---------|---------|--------|--------|--------|
+| 0       | 0       | 0      | 0      | 0      |
+| 0       | 0       | 1      | 1      | 0      |
+| 0       | 1       | 0      | 1      | 0      |
+| 0       | 1       | 1      | 0      | 1      |
+| 1       | 0       | 0      | 1      | 0      |
+| 1       | 0       | 1      | 0      | 1      |
+| 1       | 1       | 0      | 0      | 1      |
+| 1       | 1       | 1      | 1      | 1      |
 
 ## External hardware
 
