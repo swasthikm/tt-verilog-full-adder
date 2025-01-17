@@ -4,6 +4,7 @@
  */
 
 `default_nettype none
+//
 
 module tt_um_full_adder (
     input  wire [7:0] ui_in,    // Dedicated inputs
