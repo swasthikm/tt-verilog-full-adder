@@ -38,3 +38,20 @@ async def test_project(dut):
 
     # Keep testing the module by changing the input values, waiting for
     # one or more clock cycles, and asserting the expected output values.
+    await ClockCycles(dut.clk, 1)
+    dut.ui_in.value = 1
+    await ClockCycles(dut.clk, 1)
+    assert dut.uo_out.value == 1
+
+    await ClockCycles(dut.clk, 1)
+    dut.ui_in.value = 2
+    await ClockCycles(dut.clk, 1)
+    assert dut.uo_out.value == 1
+
+    await ClockCycles(dut.clk, 1)
+    dut.ui_in.value = 7
+    await ClockCycles(dut.clk, 1)
+    assert dut.uo_out.value == 3
+
+    
+    
